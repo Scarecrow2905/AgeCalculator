@@ -60,8 +60,6 @@ class AgeCalculatorGUI:
 
             # Update result label
             self.result_label.config(text=f'You are {age_result} years old!')
-            if(age_result > 30):
-                self.result_label.config(text=f'Damn you are old..')
 
         except ValueError:
             showerror("Invalid Input", "Please enter valid numbers.")
