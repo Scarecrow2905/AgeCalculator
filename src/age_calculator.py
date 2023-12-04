@@ -13,13 +13,3 @@ class AgeCalculator:
 
         return age
         
-    def get_input(self):
-        try:
-            day = int(input('Enter day:'))
-            month = int(input('Enter month:'))
-            year = int(input('Enter year:'))
-
-            age_result = self.calculate_age(day, month, year)
-            print(f'You are {age_result} years old')
-        except ValueError as ve:
-            print(f"Error {ve}")
